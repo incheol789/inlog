@@ -63,7 +63,6 @@ public class PostService {
 
 	}
 
-	@Transactional
 	public void delete(Long id) {
 		Post post = postRepository.findById(id).orElseThrow(PostNotFound::new);
 
